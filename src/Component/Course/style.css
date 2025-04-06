@@ -1,0 +1,12 @@
+.mySwiper{
+    width: 90%;
+    padding-left: 70px;
+    margin-top: 70px;
+
+}
+@media screen and (min-width: 1024px) {
+    .mySwiper {
+      width: 100%;
+      padding: 10px;
+    }
+  }
