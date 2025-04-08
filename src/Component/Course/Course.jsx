@@ -58,7 +58,7 @@ function Course() {
                 <>
                 <SwiperSlide key={ele.$id} className='swiper-slide '>
                     <div key={ele.$id}>
-                    <Card img={ele.logo_id} heading={ele.heading} description={ele.description} skill={ele.skill} language={ele.language} start_date={ele.start_date} end_date={ele.end_date} url={ele.view}/>
+                    <Card  img={ele.logo_id} heading={ele.heading} description={ele.description} skill={ele.skill} language={ele.language} start_date={ele.start_date} end_date={ele.end_date} url={ele.view}/>
                      
                 </div>
                 </SwiperSlide>

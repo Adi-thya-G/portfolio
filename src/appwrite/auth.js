@@ -40,7 +40,7 @@ export class AuthService {
     }
     async getcourseData(){
         try{
-            return this.databases.listDocuments(
+            return  await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCourseCollectionId
             )
