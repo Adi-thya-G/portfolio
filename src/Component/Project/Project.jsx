@@ -15,7 +15,7 @@ import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
 function Project() {
-  console.log(authService.get_project_file_preview())
+  
   return (
     <div className=' w-auto h-auto mt-16  mx-20 p-3 ' id='Project'>
        <h2 className='flex justify-center py-5 my-2 font-serif  text-3xl'>Task Management System            
