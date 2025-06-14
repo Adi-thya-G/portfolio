@@ -3,7 +3,7 @@ import authService from '../../appwrite/auth'
 function Home() {
 
   const handleDownload = () => {
-    const fileUrl = "https://cloud.appwrite.io/v1/storage/buckets/6749e54a000dda5e3e5d/files/67505b7a0001960bcbe5/view?project=674939ed00089025eed3&mode=admin";
+    const fileUrl = "https://fra.cloud.appwrite.io/v1/storage/buckets/6749e54a000dda5e3e5d/files/684d075e0007be89f647/view?project=674939ed00089025eed3&mode=admin";
     
     // Use fetch to retrieve the file
     fetch(fileUrl)

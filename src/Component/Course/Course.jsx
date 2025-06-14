@@ -34,24 +34,33 @@ function Course() {
   }}
   modules={[Navigation, Pagination, Mousewheel, Keyboard]}
   className="mySwiper"
-  breakpoints={{
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-  }}
+ breakpoints={{
+  320: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    
+
+  },
+  768: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+  },
+  1024: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+  },
+  1440: {
+    slidesPerView: 3,
+    spaceBetween: 30,
+  },
+}}
+
 >
   {
     data.length === 0 ? null : data?.map((ele) => (
-      <SwiperSlide key={ele.$id} className="swiper-slide">
+     
+      <SwiperSlide key={ele.$id} className="mt-7" >
+         
         <Card
           img={ele.logo_id}
           heading={ele.heading}

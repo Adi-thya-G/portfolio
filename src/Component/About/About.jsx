@@ -21,7 +21,7 @@ AOS.refresh();
  
 
   return (
-    <div className="min-h-screen py-20 mt-20 bg-gradient-to-b from-gray-50 to-gray-100 " id="About"  data-aos="fade-up">
+    <div className="min-h-screen py-20 mt-20 bg-gradient-to-b from-gray-50 to-gray-100 " id="About"  data-aos="fade-up" data-aos-anchor-placement="top-center">
       {/* Hero Section */}
       <section className="relative  flex items-center justify-center px-4 lg:px-0">
         <div className="text-center" data-aos="fade-up">
@@ -29,7 +29,7 @@ AOS.refresh();
             <img
               src={adithya}
               alt="Professional headshot"
-              className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
+              className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg z-40"
               loading="lazy"
             />
           </div>
