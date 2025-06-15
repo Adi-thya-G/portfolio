@@ -5,7 +5,7 @@ import intershal from './intershal.png'
 import authService from '../../appwrite/auth'
 function Card({img,heading,description,skill,language,start_date,end_date,url}) {
   return (
-    <div className='w-full  h-5/6 border-2 bg-zinc-50  border-zinc-100 shadow-xl mb-10 z-10  shadow-slate-300 p-3  select-none 
+    <div className='w-full  h-5/6 border-2 bg-zinc-50  border-zinc-100 shadow-xl mb-10 z-10  shadow-slate-300 p-3  min-h-[540px] 
     rounded-lg' > {/* data-aos="flip-right"*/}
       <div className='w-20 h-10'><img src={authService.getFilePreview(img).href.replace("preview","view")+"&mode=admin"} alt=""  className=''/></div>
         <h2 className='flex justify-center text-3xl font-serif -mt-4 text-slate-600'>{heading}</h2>

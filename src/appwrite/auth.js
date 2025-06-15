@@ -58,6 +58,18 @@ export class AuthService {
             fileId)
 
         }
+    async getProjectData(){
+        try{
+            return await this.databases.listDocuments(
+                conf.appwriteDatabaseId,
+                conf.appwriteProjectCollectionId
+            )
+        }
+        catch(error)
+        {
+            console.log(error)
+        }
+    }
        
     
 }
