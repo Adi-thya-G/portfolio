@@ -15,7 +15,7 @@ import { Pagination } from 'swiper/modules';
 function Project() {
 const [data,setdata]=useState([])
 useEffect(()=>{
-  authService.getProjectData().then((res)=>{setdata(res.documents)})
+  authService.getProjectData().then((res)=>{setdata(res?.documents)})
   console.log('====================================');
   console.log(data);
   console.log('====================================');
@@ -57,7 +57,7 @@ useEffect(()=>{
          ))
       :
       <div>
-        <h4>lodding</h4>
+        <h4>loading</h4>
       </div>
     }
        
